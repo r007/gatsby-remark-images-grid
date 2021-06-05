@@ -23,15 +23,15 @@
   "dependencies": {
     "remark-parse": "^9.0.0",
     "unified": "^9.2.1",
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^3.1.0"
   },
   "devDependencies": {
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-react": "^7.23.1",
-    "husky": "^5.2.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "2.2.1"
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.1"
   },
   "peerDependencies": {
     "gatsby": "^3.1.2"

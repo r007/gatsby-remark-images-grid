@@ -21,7 +21,7 @@
     "gatsby-ssr.js"
   ],
   "dependencies": {
-    "remark-parse": "^10.0.1",
+    "remark-parse": "^9.0.0",
     "unified": "^9.2.2",
     "unist-util-visit": "^2.0.3"
   },

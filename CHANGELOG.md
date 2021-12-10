@@ -1,3 +1,7 @@
+# 1.2.3 (2021-12-10)
+
+-   Bugfix: Rollback from ESM to CommonJS
+
 # 1.2.2 (2021-12-10)
 
 -   Update all the dependencies

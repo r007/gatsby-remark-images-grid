@@ -33,8 +33,8 @@ You can download `gatsby-remark-images-grid` from the NPM registry via the
 `npm` or `yarn` commands
 
 ```shell
-yarn add gatsby-remark-images-grid
-npm install gatsby-remark-images-grid --save
+yarn add gatsby-remark-images-grid-v4
+npm install gatsby-remark-images-grid-v4 --save
 ```
 
 ## Usage
@@ -50,11 +50,11 @@ module.exports = {
                 plugins: [
                     // Make CSS grids available
                     // without options
-                    "gatsby-remark-images-grid"
+                    "gatsby-remark-images-grid-v4"
                     // or
                     // with options
                     {
-                        resolve: "gatsby-remark-images-grid",
+                        resolve: "gatsby-remark-images-grid-v4",
                         options: {
                             className: "myCustomClassName",
                             gridGap: "20px",
@@ -68,7 +68,7 @@ module.exports = {
 }
 ```
 
-> Note: If you use others images remark plugins, put `gatsby-remark-images-grid` first because images are not images nodes before being wrapped by a grid
+> Note: If you use others images remark plugins, put `gatsby-remark-images-grid-v4` first because images are not images nodes before being wrapped by a grid
 
 2.  Use grid layout in your markdown
 
@@ -123,5 +123,5 @@ This project is licensed under the MIT License - see the
 [badge-npm-dl]: https://img.shields.io/npm/dt/gatsby-remark-images-grid.svg?style=flat-square
 [badge-licence]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [badge-prs-welcome]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/gatsby-remark-images-grid
-[github-issue]: https://github.com/cedricdelpoux/gatsby-remark-images-grid/issues/new
+[npm]: https://www.npmjs.org/package/gatsby-remark-images-grid-v4
+[github-issue]: https://github.com/r007/gatsby-remark-images-grid-v4/issues/new

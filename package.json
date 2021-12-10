@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-remark-images-grid",
-  "version": "1.2.0",
+  "name": "gatsby-remark-images-grid-v4",
+  "version": "1.2.2",
   "description": "CSS grid layouts for your images made easy in markdown",
-  "repository": "https://github.com/cedricdelpoux/gatsby-remark-images-grid",
+  "repository": "https://github.com/r007/gatsby-remark-images-grid",
   "author": "Cédric Delpoux",
   "license": "MIT",
   "private": false,
@@ -21,28 +21,25 @@
     "gatsby-ssr.js"
   ],
   "dependencies": {
-    "remark-parse": "^9.0.0",
-    "unified": "^9.2.1",
-    "unist-util-visit": "^3.1.0"
+    "remark-parse": "^10.0.1",
+    "unified": "^10.1.1",
+    "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
+    "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.24.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "2.3.1"
+    "eslint-plugin-react": "^7.27.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "2.5.1"
   },
   "peerDependencies": {
-    "gatsby": "^3.1.2"
+    "gatsby": "^3.0.0 || ^4.0.0"
   },
   "scripts": {
     "lint": "eslint index.js gatsby-ssr.js example",
-    "prepublishOnly": "yarn lint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "preCommit": "lint-staged",
+    "prepublishOnly": "npm run lint",
+    "prepare": "husky install"
   }
 }

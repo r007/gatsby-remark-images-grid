@@ -1,8 +1,8 @@
-const visit = require("unist-util-visit")
-const unified = require("unified")
-const markdown = require("remark-parse")
+import {visit} from "unist-util-visit"
+import {unified} from "unified"
+import markdown from "remark-parse"
 
-module.exports = ({markdownAST}, pluginOptions) => {
+const gatsbyRemarkImagesGrid = ({markdownAST}, pluginOptions) => {
   visit(markdownAST, "code", (node) => {
     if (!node.lang || node.lang.indexOf("grid") === -1) {
       return
@@ -74,3 +74,5 @@ module.exports = ({markdownAST}, pluginOptions) => {
     }
   })
 }
+
+export default gatsbyRemarkImagesGrid

@@ -15,7 +15,7 @@
 
 ---
 
-**Important: This fork supports the newest versions of Gatsby 3.x/4.x 😀**
+## Important: This fork supports the newest versions of Gatsby 3.x/4.x 😀
 
 `gatsby-remark-images-grid` create a `<figure>` tag for you containing:
 
